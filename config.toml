@@ -41,9 +41,9 @@ facebookApp = ""
 facebookPixel = ""
 disqusShortname = ""
 
-#[params.logo]
-#inline = true
-#path = "image/brand/logo.svg"
+[params.logo]
+inline = false
+path = "image/objcretain.png"
 
 [params.image]
 width = "2048"

@@ -1,0 +1,13 @@
+[graham]
+name = "Graham Lee"
+uri = "https://sicpers.info/"
+email = "graham@objc-retain.com"
+twitter = "iwasleeg"
+image = "image/author/graham.jpg"
+
+[steven]
+name = "Steven Baker"
+uri = "https://stevenrbaker.com/"
+email = "steven@objc-retain.com"
+twitter = "srbaker"
+#image = "image/author/default.webp"
