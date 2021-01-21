@@ -1,0 +1,132 @@
+baseURL = "https://objc-retain.com"
+
+title = "[objc retain];"
+languageCode = "en-gb"
+defaultContentLanguage = "en"
+
+theme = "axiom"
+
+paginate = 2
+canonifyURLs = false
+summaryLength = 40
+rssLimit = 100
+enableEmoji = true
+enableRobotsTXT = true
+pluralizelisttitles = false
+
+[permalinks]
+posts = "/:filename"
+
+[params]
+mainSections = ["posts"]
+copyrightYear = 2021
+# Go Reference time: Mon Jan 2 15:04:05 MST 2006
+dateFormat = "2006-01-02 15:04"
+highlight = "dark"
+
+[params.brand]
+domain = "objc-retain.com"
+email = "graham@objc-retain.com"
+
+[params.services]
+googleAnalyticsId = ""
+googleTagManagerId = ""
+googleAdsId = ""
+googleAdsenseId = ""
+googleAdsenseAdSlotId = ""
+googleAdsenseLoad = ""
+googleAdsConversionId = ""
+googleAdsConversionValue = 0
+facebookApp = ""
+facebookPixel = ""
+disqusShortname = ""
+
+#[params.logo]
+#inline = true
+#path = "image/brand/logo.svg"
+
+[params.image]
+width = "2048"
+height = "1024"
+faviconIco = "favicon.ico"
+faviconAlt = "image/brand/favicon.png"
+icon1To1 = "image/brand/icon-1-1.png"
+icon2To1 = "image/brand/icon-2-1.png"
+default = "image/page-default.webp"
+
+[params.font]
+type = ""
+path = ""
+files = []
+
+[params.cdn]
+provider = "local"
+type = "image"
+
+[outputs]
+home = ["HTML", "ATOM"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+taxonomyTerm = ["HTML"]
+
+[outputFormats]
+[outputFormats.ATOM]
+name = "ATOM"
+baseName = "feed"
+mediaType = "application/atom+xml"
+
+[mediaTypes]
+[mediaTypes."application/atom+xml"]
+suffixes = ["atom"]
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = false
+footnote = true
+linkify = false
+strikethrough = false
+table = true
+taskList = false
+typographer = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.parser]
+attribute = false
+[markup.highlight]
+codeFences = true
+noClasses = false
+tabWidth = 2
+# lineNos = true
+# lineNumbersInTable = false
+
+[menu]
+[[menu.main]]
+url = "/posts/"
+name = "Posts"
+weight = 1
+
+[[menu.foot]]
+url = "/posts/"
+name = "Posts"
+weight = 1
+
+[[menu.foot]]
+url = "/about/"
+name = "About"
+weight = 2
+
+[[menu.foot]]
+url = "/contact/"
+name = "Contact"
+weight = 3
+
+[[menu.foot]]
+url = "/privacy/"
+name = "Privacy"
+weight = 4
+
+[languages]
+[languages."en"]
+weight = 1
+languageName = "English"
